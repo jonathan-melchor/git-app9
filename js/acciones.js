@@ -51,7 +51,7 @@ function watchPosition(){
 	enableHighAccuracy :true,
   }
 
-  var watchID=navigator.geolocation.getCurrentPosition(onSuccess, onError, options);
+  var watchID=navigator.geolocation.watchPosition(onSuccess, onError, options);
   
   function onSuccess(position){
 	  
